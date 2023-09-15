@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Insight 360  Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(147deg, black 7%, navy 74%);
+            font-family: Arial, sans-serif;
+            font-style: italic, unset;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        
+        .header-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .header {
+            position: absolute;
+            top: 10px;
+            font-size: 32px;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .button {
+            width: 200px;
+            height: 50px;
+            background:linear-gradient(147deg, black 74%, navy 7%);;
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Insight 360</div>
+    <div class="container">
+        <button class="button" id="ageButton">Age</button>
+        <button class="button" id="genderButton">Gender</button>
+    </div>
+
+    <script>
+        document.getElementById("ageButton").addEventListener("click", function() {
+            window.location.href = "age.html"; // Redirect to age page
+        });
+
+        document.getElementById("genderButton").addEventListener("click", function() {
+            window.location.href = "gender.html"; // Redirect to gender page
+        });
+    </script>
+</body>
+</html>
